@@ -1,0 +1,39 @@
+#cxt-menu {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#cxt-menu ul {
+	min-width: auto;
+	background-color: rgba(245,245,245,0.98);
+}
+
+#cxt-menu ul li a {
+	padding: 0px 20px;
+}
+
+#cxt-menu ul li {
+	height: 20px;
+    line-height: 20px;
+}
+
+#cxt-menu .dropdown-menu>li>a:focus {
+	background-color: none;
+}
+#cxt-menu .dropdown-menu>li>a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #428bca;
+}
+#cxt-menu .dropdown-menu>li.disabled>a:hover {
+	color: #777;
+    text-decoration: none;
+    background-color: inherit;
+    cursor: default;
+}
+
+#cxt-menu .divider {
+	height: 2px;
+    margin: 5px 0;
+}

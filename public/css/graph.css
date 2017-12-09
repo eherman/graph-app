@@ -1,0 +1,118 @@
+/* Graph View */
+.graph-view {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#cy {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+.qtip-details-btn {
+    margin-top: 5px;
+    width: 100px;
+}
+
+.refresh-graph-btn, 
+.filter-graph-btn {
+    color: #888;
+    font-size: 26px;
+    display: inline-block;
+    cursor: pointer;
+}
+.refresh-graph-btn:hover, 
+.filter-graph-btn:hover {
+    color: #333;
+}
+
+/* Status and Name Container */
+.graph-status-container.top-left-container {
+    position: absolute; 
+    top: 50px; 
+    left: 54.5px; 
+    z-index: 1010;
+    font-size: 14px; 
+    font-weight: bold; 
+    width: 144px; 
+    text-align: center;
+}
+
+.graph-status-container.top-left-container .graph-name-label {
+    display: inline-block;
+    margin-top: 3px;
+    margin-right: 5px;
+    max-width: calc(100% - 40px);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Count Container */
+.graph-count-container.top-left-container {
+    position: absolute; 
+    top: 75px; 
+    left: 54.5px; 
+    z-index: 1010;
+    font-size: 10px; 
+    width: 144px; 
+    text-align: center;
+}
+
+/* Toolbar */
+.toolbar-middle {
+    position: absolute; 
+    bottom: 25px; 
+    border-radius: 7px;
+}
+.toolbar-middle .btn {
+    height: 30px; 
+    width: 95px;
+    font-size: 12px;
+}
+.toolbar-middle .toolbar-full-text {
+    display: inline-block;
+}
+
+/* Grid Button */
+.grid-btn {
+    cursor: pointer;
+    color: #0288d1;
+}
+.grid-btn:hover {
+    color: #016ca7;
+}
+
+.bottom-right-menu-btn-container .glyphicon-th {
+    font-size: 40px;
+}
+
+/* Legend */
+/*.graph-legend {
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: 25px;
+    z-index: 1000;
+    background-color: #fff;
+    width: 160px;
+    border: solid 1px #ccc; 
+    border-radius: 5px;
+}
+
+.graph-legend .legend-close-btn {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    font-size: 18px;
+    color: #aaa;
+    cursor: pointer;
+}
+.graph-legend .legend-close-btn:hover {
+    color: #333;
+}*/

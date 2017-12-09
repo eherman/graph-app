@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Graph</title>
+
+        <link rel="stylesheet" href="css/style.css" type="text/css" >
+
+        <script src="/lib/jquery/jquery.min.js"></script>
+        <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/lib/qtip/qtip.min.js"></script>
+        <script src="/lib/cytoscape/build/cytoscape-unstable.js"></script>
+        <script src="/lib/qtip/cytoscape-qtip.js"></script>
+
+        <script src="/js/index.js"></script>
+
+    </head>
+    <body>
+
+        <div id="cy"></div>
+
+        <div class="sidebar box-shadow">
+
+            <div class="sidebar-header">
+
+                <div class="graph-status-container">
+                    <span class="graph-name-label"></span>
+                    <div class="graph-status-icon-container" style="display:inline-block;">
+
+                        <div class="graph-status-icon running" title="Running" style="display:none;">
+                        </div>
+                        <div class="graph-status-icon complete" title="Complete" style="display:none;">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="graph-status-icon errors" title="Complete with errors" style="display:none;">
+                            <i class="fa fa-exclamation"></i>
+                        </div>
+                        <div class="graph-status-icon idle" title="Idle" style="display:none;">
+                            <i class="fa fa-minus"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="graph-count-container">
+                    <span class="graph-selected-count" style="font-weight:bold;">0</span> nodes/edges selected
+                </div>
+                <button class="btn btn-xs btn-danger graph-errors-btn" style="margin-top:8px; width:110px;">View errors</button>
+
+            </div>
+
+            <div class="sidebar-body">
+
+            </div>
+
+            <div class="sidebar-footer">
+                <span class="graph-displayed-count" style="font-weight:bold;">0</span>
+                of
+                <span class="graph-total-count" style="font-weight:bold;">0</span>
+                nodes displayed
+            </div>
+
+            <div class="sidebar-dragbar"></div>
+
+        </div>
+
+        <div id="cxt-menu" class="dropdown" data-value="">
+            <button id="cxt-menu-btn" style="display: none;" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Dropdown
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="cxt-menu-info-btn" href="#">Get info</a></li>
+                <li><a class="cxt-menu-select-btn" href="#">Select</a></li>
+                <li><a class="cxt-menu-deselect-btn" href="#">Deselect</a></li>
+                <li role="separator" class="divider show-hide-divider"></li>
+                <li><a class="cxt-menu-show-btn" href="#">Show</a></li>
+                <li><a class="cxt-menu-hide-btn" href="#">Hide</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Close menu</a></li>
+            </ul>
+        </div>
+
+    </body>
+</html>

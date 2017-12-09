@@ -1,0 +1,80 @@
+node {
+    content: data(displayName);
+    shape: data(shape);
+    text-valign: data(textAlign);
+    text-wrap: wrap;
+    text-max-width: 1000px;
+    color: black;
+    text-outline-width: 0;
+    text-outline-color: #333;
+    background-color: white;
+    background-opacity: 1;
+    background-image: data(icon);
+    background-width: 60%;
+    background-height: 60%;
+    border-color: data(color);
+    border-opacity: 1;
+    border-width: 4px;
+    font-size: 10px;
+}
+
+edge {
+    text-valign: center;
+    color: #333;
+    target-arrow-shape: triangle;
+    font-size: 8px;
+    line-color: data(color);
+    target-arrow-color: data(color);
+    source-arrow-color: data(color);
+}
+
+edge:loop {
+    display: none;
+}
+
+node.hide {
+    display: none;
+}
+
+edge.hide {
+    display: none;
+}
+
+node:selected {
+    background-color: #4CABDB;
+    width: 40px;
+    height: 40px;
+}
+
+node.enabled {
+    border-color: #3b7db5;
+    width: 40px;
+    height: 40px;
+}
+
+node.disabled {
+    border-color: gray;
+    background-color: #aaa;
+    width: 25px;
+    height: 25px;
+}
+
+edge.disabled {
+    line-color: gray;
+    target-arrow-color: gray;
+    source-arrow-color: gray;
+}
+
+edge:selected {
+    width: 3px;
+}
+
+:active {
+    overlay-opacity: 0;
+}
+
+core {
+    selection-box-opacity: 0.3;
+    active-bg-opacity: 0;
+    outside-texture-bg-opacity: 0;
+}
