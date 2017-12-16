@@ -15,63 +15,55 @@
         <script src="/lib/cytoscape/build/cytoscape-unstable.js"></script>
         <script src="/lib/qtip/cytoscape-qtip.js"></script>
 
+        <script src="/js/graph/graph.js"></script>
+        <script src="/js/sidebar/sidebar.js"></script>
+        <script src="/js/sidebar/list-sidebar.js"></script>
+        <script src="/js/sidebar/info-sidebar.js"></script>
+        <script src="/js/cxt-menu/cxt-menu.js"></script>
+
         <script src="/js/index.js"></script>
 
     </head>
     <body>
 
-        <div id="cy"></div>
+        <div class="graph-view">
 
-        <div class="sidebar box-shadow">
+            <div id="cy"></div>
 
-            <div class="sidebar-header">
+            <div class="sidebar box-shadow">
 
-                <div class="graph-status-container">
-                    <span class="graph-name-label"></span>
-                    <div class="graph-status-icon-container" style="display:inline-block;">
+                <div class="sidebar-body">
 
-                        <div class="graph-status-icon running" title="Running" style="display:none;">
-                        </div>
-                        <div class="graph-status-icon complete" title="Complete" style="display:none;">
-                            <i class="fa fa-check"></i>
-                        </div>
-                        <div class="graph-status-icon errors" title="Complete with errors" style="display:none;">
-                            <i class="fa fa-exclamation"></i>
-                        </div>
-                        <div class="graph-status-icon idle" title="Idle" style="display:none;">
-                            <i class="fa fa-minus"></i>
-                        </div>
-
+                    <div class="node-list-sidebar">
                     </div>
+
+                    <div class="info-sidebar" style="display:none;">
+                    </div>
+
                 </div>
-                <div class="graph-count-container">
-                    <span class="graph-selected-count" style="font-weight:bold;">0</span> nodes/edges selected
+
+                <div class="sidebar-footer">
+                    <span class="graph-displayed-count" style="font-weight:bold;">0</span>
+                    of
+                    <span class="graph-total-count" style="font-weight:bold;">0</span>
+                    nodes displayed
                 </div>
-                <button class="btn btn-xs btn-danger graph-errors-btn" style="margin-top:8px; width:110px;">View errors</button>
+
+                <div class="sidebar-dragbar"></div>
 
             </div>
 
-            <div class="sidebar-body">
+            <button class="sidebar-btn btn btn-default" type="button">
+              <i class="fa fa-caret-right"></i>
+              <i class="fa fa-caret-left" style="display:none; margin-right:2px;"></i>
+            </button>
 
-            </div>
-
-            <div class="sidebar-footer">
-                <span class="graph-displayed-count" style="font-weight:bold;">0</span>
-                of
-                <span class="graph-total-count" style="font-weight:bold;">0</span>
-                nodes displayed
-            </div>
-
-            <div class="sidebar-dragbar"></div>
-
-        </div>
-
-        <div id="cxt-menu" class="dropdown" data-value="">
-            <button id="cxt-menu-btn" style="display: none;" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <div id="cxt-menu" class="dropdown" data-value="">
+              <button id="cxt-menu-btn" style="display: none;" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 Dropdown
                 <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
+              </button>
+              <ul class="dropdown-menu">
                 <li><a class="cxt-menu-info-btn" href="#">Get info</a></li>
                 <li><a class="cxt-menu-select-btn" href="#">Select</a></li>
                 <li><a class="cxt-menu-deselect-btn" href="#">Deselect</a></li>
@@ -80,7 +72,9 @@
                 <li><a class="cxt-menu-hide-btn" href="#">Hide</a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="#">Close menu</a></li>
-            </ul>
+              </ul>
+            </div>
+
         </div>
 
     </body>

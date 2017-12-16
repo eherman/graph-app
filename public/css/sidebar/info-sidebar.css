@@ -1,0 +1,105 @@
+.info-sidebar {
+  height: 100%;
+}
+
+.info-sidebar .info-sidebar-header {
+  position: relative;
+  height: 40px;
+  width: 100%;
+  border-bottom: solid 1px #ccc;
+}
+
+.info-sidebar .info-sidebar-body {
+  float: left;
+  overflow-y: auto;
+  height: calc(100% - 40px);
+  width: 100%;
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+}
+
+.info-sidebar .back-btn {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  font-size: 18px;
+  color: #aaa;
+  cursor: pointer;
+}
+.info-sidebar .back-btn:hover {
+  color: #333;
+}
+
+.info-sidebar .title-container {
+  width: 100%;
+  float: left;
+  padding-left: 10px;
+}
+
+.info-sidebar .title {
+  float: left;
+  margin: 8px 10px 5px 0px;
+  width: calc(100% - 80px);
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.info-sidebar .type-icon {
+  float: left;
+  height: 30px;
+  width: 30px;
+  padding: 4px 6px 4px 4px;
+}
+
+.info-sidebar .divider-container {
+  width: 100%;
+  height: 30px;
+  float: left;
+  position: relative;
+}
+
+.info-sidebar .divider-label {
+  position: absolute;
+  margin-top: 5px;
+  padding: 0px 10px 0px 15px;
+  font-weight: bold;
+  background-color: #fff; 
+}
+
+.info-sidebar .divider-line {
+  float: left;
+  border-top: 1px #ccc solid;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  width: calc(100% - 30px);
+}
+
+.info-sidebar .key-label {
+  float: left;
+  width: 40%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #777;
+  font-size: 12px;
+  height: 22px;
+  padding-top: 3px;
+  padding-left: 20px;
+  padding-right: 5px;
+}
+
+.info-sidebar .value-label {
+  float: left;
+  width: 60%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 22px;
+  padding-left: 5px;
+  padding-right: 15px;
+}
