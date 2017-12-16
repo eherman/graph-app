@@ -26,53 +26,70 @@
     </head>
     <body>
 
-        <div class="graph-view">
-
-            <div id="cy"></div>
-
-            <div class="sidebar box-shadow">
-
-                <div class="sidebar-body">
-
-                    <div class="node-list-sidebar">
-                    </div>
-
-                    <div class="info-sidebar" style="display:none;">
-                    </div>
-
-                </div>
-
-                <div class="sidebar-footer">
-                    <span class="graph-displayed-count" style="font-weight:bold;">0</span>
-                    of
-                    <span class="graph-total-count" style="font-weight:bold;">0</span>
-                    nodes displayed
-                </div>
-
-                <div class="sidebar-dragbar"></div>
-
+        <div class="header">
+            <div class="logo">PENNYWISE</div>
+            <div class="input-group wildcard_search">
+              <input id="wildcard_search" type="text" class="form-control" placeholder="Search">
+              <span class="input-group-btn">
+                <button id="wildcard_btn" class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+              </span>
             </div>
+            <div class="header-right-group">
+                <i class="header-btn settings-btn fa fa-user" style="font-size:40px; margin-top:18px; margin-left:22px;"></i>
+            </div>
+        </div>
 
-            <button class="sidebar-btn btn btn-default" type="button">
-              <i class="fa fa-caret-right"></i>
-              <i class="fa fa-caret-left" style="display:none; margin-right:2px;"></i>
-            </button>
+        <div class="main-container">
 
-            <div id="cxt-menu" class="dropdown" data-value="">
-              <button id="cxt-menu-btn" style="display: none;" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Dropdown
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="cxt-menu-info-btn" href="#">Get info</a></li>
-                <li><a class="cxt-menu-select-btn" href="#">Select</a></li>
-                <li><a class="cxt-menu-deselect-btn" href="#">Deselect</a></li>
-                <li role="separator" class="divider show-hide-divider"></li>
-                <li><a class="cxt-menu-show-btn" href="#">Show</a></li>
-                <li><a class="cxt-menu-hide-btn" href="#">Hide</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Close menu</a></li>
-              </ul>
+            <div class="graph-view">
+
+                <div id="cy"></div>
+
+                <div class="sidebar box-shadow">
+
+                    <div class="sidebar-body">
+
+                        <div class="node-list-sidebar">
+                        </div>
+
+                        <div class="info-sidebar" style="display:none;">
+                        </div>
+
+                    </div>
+
+                    <div class="sidebar-footer">
+                        <span class="graph-displayed-count" style="font-weight:bold;">0</span>
+                        of
+                        <span class="graph-total-count" style="font-weight:bold;">0</span>
+                        nodes displayed
+                    </div>
+
+                    <div class="sidebar-dragbar"></div>
+
+                </div>
+
+                <button class="sidebar-btn btn btn-default" type="button">
+                  <i class="fa fa-caret-right"></i>
+                  <i class="fa fa-caret-left" style="display:none; margin-right:2px;"></i>
+                </button>
+
+                <div id="cxt-menu" class="dropdown" data-value="">
+                  <button id="cxt-menu-btn" style="display: none;" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Dropdown
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="cxt-menu-info-btn" href="#">Get info</a></li>
+                    <li><a class="cxt-menu-select-btn" href="#">Select</a></li>
+                    <li><a class="cxt-menu-deselect-btn" href="#">Deselect</a></li>
+                    <li role="separator" class="divider show-hide-divider"></li>
+                    <li><a class="cxt-menu-show-btn" href="#">Show</a></li>
+                    <li><a class="cxt-menu-hide-btn" href="#">Hide</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Close menu</a></li>
+                  </ul>
+                </div>
+
             </div>
 
         </div>
