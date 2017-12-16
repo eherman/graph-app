@@ -85,8 +85,8 @@ var CXTMenu = {
             $('#cxt-menu').css('left', data.x - 5);
         }
 
-        if(data.y + 78 > $(parent).height()) {
-            $('#cxt-menu').css('top', data.y - 125);
+        if(data.y + 150 > $(parent).height()) {
+            $('#cxt-menu').css('top', data.y - 150);
         } else {
             $('#cxt-menu').css('top', data.y - 5);
         }
